@@ -1,9 +1,168 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Page</title>
+</head>
 
-    </head>
+<body>
 
-    <body>
-        Hello World!
-    </body>
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>Welcome to HTML Learning</h1>
+        <p>This page covers most important HTML concepts.</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#lists">Lists</a> |
+        <a href="#table">Table</a> |
+        <a href="#form">Form</a>
+    </nav>
+
+    <hr>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About HTML</h2>
+        <p><strong>HTML</strong> stands for <em>HyperText Markup Language</em>.</p>
+        <p>It is used to structure web pages.</p>
+
+        <!-- LINK -->
+        <p>Visit 
+            <a href="https://www.google.com" target="_blank">Google</a>
+        </p>
+
+        <!-- IMAGE -->
+        <img src="https://via.placeholder.com/150" alt="Sample Image">
+    </section>
+
+    <hr>
+
+    <!-- LISTS -->
+    <section id="lists">
+        <h2>Lists</h2>
+
+        <h3>Unordered List</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Learn HTML</li>
+            <li>Learn CSS</li>
+            <li>Learn JavaScript</li>
+        </ol>
+
+        <h3>Description List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Structure of webpage</dd>
+        </dl>
+    </section>
+
+    <hr>
+
+    <!-- TABLE -->
+    <section id="table">
+        <h2>Table Example</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Siddhi</td>
+                    <td>Developer</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Tester</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- FORM -->
+    <section id="form">
+        <h2>Form Example</h2>
+
+        <form action="#">
+            <label>Name:</label>
+            <input type="text" name="name"><br><br>
+
+            <label>Email:</label>
+            <input type="email" name="email"><br><br>
+
+            <label>Password:</label>
+            <input type="password"><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female<br><br>
+
+            <label>Skills:</label>
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS<br><br>
+
+            <label>City:</label>
+            <select>
+                <option>Mumbai</option>
+                <option>Pune</option>
+            </select><br><br>
+
+            <label>Message:</label><br>
+            <textarea rows="4" cols="30"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- MEDIA -->
+    <section>
+        <h2>Media</h2>
+
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="sample.mp3" type="audio/mpeg">
+        </audio>
+
+        <h3>Video</h3>
+        <video width="300" controls>
+            <source src="sample.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <hr>
+
+    <!-- INLINE VS BLOCK -->
+    <section>
+        <h2>Inline vs Block Elements</h2>
+        <p>This is a block element.</p>
+        <span>This is inline</span>
+        <span>Another inline element</span>
+    </section>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 HTML Learning</p>
+    </footer>
+
+</body>
 </html>
