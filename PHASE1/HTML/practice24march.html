@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Page</title>
+</head>
+
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>Welcome to HTML Learning</h1>
+        <p>This page covers most important HTML concepts.</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#lists">Lists</a> |
+        <a href="#table">Table</a> |
+        <a href="#form">Form</a>
+    </nav>
+
+    <hr>
+
+    <section id="about">
+        <h2>About HTML</h2>
+        <p>HTML is Hyper Text Markup Language</p>
+        <p>It is used to strucuture webpages</p>
+
+        <p>Visit
+            <a href="https://www.google.com" target="_blank">Google</a>
+        </p>
+
+        <img src="https://via.placeholder.com/150" alt="Sample Image">
+    </section>
+
+    <section is="lists">
+        <h2>Lists</h2>
+        <h3>Unordered lists</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSSS</li>
+            <li>Javascript</li>
+        </ul>
+        <h3>Ordered lists</h3>
+        <ol>
+            <li>Learn html</li>
+            <li>learn css</li>
+            <li>learn JavaScript</li>
+
+        </ol>
+        <h3>Description list</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Structur of webpage</dd>
+        </dl>
+    </section>
+
+    <hr>
+
+    <section id="table">
+      
+        <h2>Table example</h2>
+        <table border="1">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>roll no</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Siddhi</td>
+                <td>Developer</td>
+            </tr>
+
+            <tr>
+                <td>John</td>
+                <td>Testrer</td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="form">
+        <h2>Form Example</h2>
+        <form action="#">
+            <label>Name:</label>
+            <input type="text" name="name"><br><br>
+
+            <label>email</label>
+            <input type="text" name="email"><br><br>
+
+            <label>password</label>
+            <input type="text" name="password"><br><br>
+
+            <label>Gender</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female<br><br>
+
+            <label>Skills:</label>
+            <input type="checkbox">HTML
+            <input type="checkbox">CSS<br><br>
+
+            <label>City:</label>
+            <select>
+                <option>Pune</option>
+                <option>Mumbai</option>
+            </select><br><br>
+
+            <label>Message</label>
+            <textarea rows="4" cols="30"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <hr>
+
+    <section>
+        <h2>Media</h2>
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="sample.mp3" type="audio/mpeg">
+        </audio>
+
+        <h3>Video</h3>
+        <video width="300" controls>
+            <source src="sample.mp4" type="video/mp4">
+        </video>
+    </section>
+    <hr>
+
+    <section>
+        <h2>Inline vs Block elemts</h2>
+        <p>This is a bloack element.</p>
+        <span>This is inline element</span>
+        <span>This is another inline element</span>
+    </section>
+    <hr>
+
+    <footer>
+        <p>&COPY; 2026 HTML LEARNING</p>
+    </footer>
+
+    </body>
+    </html>

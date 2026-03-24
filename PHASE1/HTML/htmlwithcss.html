@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + CSS Learning</title>
+
+    <style>
+        /* UNIVERSAL SELECTOR */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* BODY STYLING */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* HOVER EFFECT */
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* SECTIONS */
+        section {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* IMAGE */
+        img {
+            border: 2px solid #333;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* LISTS */
+        ul {
+            list-style-type: square;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        /* TABLE */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        /* FORM */
+        form {
+            margin-top: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* BUTTON */
+        input[type="submit"], button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, button:hover {
+            background-color: #555;
+        }
+
+        /* FLEXBOX EXAMPLE */
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .flex-item {
+            background: #ddd;
+            padding: 10px;
+            flex: 1;
+            text-align: center;
+        }
+
+        /* INLINE VS BLOCK */
+        span {
+            background: yellow;
+            padding: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* RESPONSIVE (IMPORTANT) */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to HTML + CSS Learning</h1>
+    <p>This page now includes CSS styling</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#lists">Lists</a>
+    <a href="#table">Table</a>
+    <a href="#form">Form</a>
+</nav>
+
+<section id="about">
+    <h2>About HTML</h2>
+    <p><strong>HTML</strong> stands for <em>HyperText Markup Language</em>.</p>
+    <p>Visit <a href="https://www.google.com" target="_blank">Google</a></p>
+    <img src="https://via.placeholder.com/150" alt="Sample Image">
+</section>
+
+<section id="lists">
+    <h2>Lists</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+    <ol>
+        <li>Step 1</li>
+        <li>Step 2</li>
+    </ol>
+</section>
+
+<section id="table">
+    <h2>Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+        </tr>
+        <tr>
+            <td>Siddhi</td>
+            <td>Developer</td>
+        </tr>
+    </table>
+</section>
+
+<section id="form">
+    <h2>Form</h2>
+    <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <select>
+            <option>Mumbai</option>
+            <option>Pune</option>
+        </select>
+        <textarea placeholder="Message"></textarea>
+        <input type="submit">
+    </form>
+</section>
+
+<section>
+    <h2>Flexbox Example</h2>
+    <div class="flex-container">
+        <div class="flex-item">Box 1</div>
+        <div class="flex-item">Box 2</div>
+        <div class="flex-item">Box 3</div>
+    </div>
+</section>
+
+<section>
+    <h2>Inline vs Block</h2>
+    <p>This is block</p>
+    <span>Inline</span>
+    <span>Inline</span>
+</section>
+
+<footer>
+    <p>&copy; 2026 Learning Page</p>
+</footer>
+
+</body>
+</html>
