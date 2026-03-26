@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<script>
+    console.log("approach to create an array using [ ] brackets ");
+
+    let colors1 = ["green", "yellow", "blue", "white", "grey", "red"];
+
+    console.log("colors1", colors1);
+    console.log("colors1[0]", colors1[0]);
+</script>
+
+
+<script>
+    // another approach to create an array
+    console.log("another approach to create an array using Array object ");
+
+
+    let colors2 = new Array();
+    colors2[0] = "green";
+    colors2[1] = "yellow";
+
+    console.log("colors2", colors2);
+    console.log("colors2[0]", colors2[0]);
+
+</script>
+
+<script>
+    // TASK- 4: create an array number1 of some 5 numbers.
+    // create a function to print the last number of a given array. apply it on number1 array.
+</script>
+
+<script>
+    let arr = [1, 2, 3, 4, 5];
+    function printArrayNum(param1) {
+        console.log("last number of the given array is ", param1[param1.length - 1]);
+    }
+    printArrayNum(arr);
+</script>
+
+<script>
+    let cars = new Array();
+    cars[0] = "Maruti";
+    cars[1] = "Skoda";
+    cars[2] = "BMW";
+    console.log(cars);
+    console.log(typeof cars);
+    console.log(Array.isArray(cars));
+    cars.forEach((color, index) => {
+        console.log(`${index + 1}: ${color}`);
+    });
+</script>
+
+
+<script>
+    console.log(" array methods demo \n");
+    // Push Pop Unshift Shift
+
+
+    // foreach methods
+    colors1.forEach(item => console.log(item));
+    colors1.forEach(item => console.log(item.toUpperCase()));
+
+    // TASK-5 : use colors1.forEach to print the length of the individual colors 
+
+</script>
+
+<script>
+    // TASK-5 SOLUTION: 
+    let mycars = new Array();
+    mycars[0] = "Maruti";
+    mycars[1] = "Skoda";
+    mycars[2] = "BMW";
+    console.log(mycars);
+    console.log(typeof mycars);
+    console.log(Array.isArray(mycars));
+
+
+    mycars.forEach((car, index) => {
+        console.log(
+            `${index + 1}: Name is ${car.toUpperCase()} --> Length of car name - ${car.length}`
+        );
+    });
+</script>
+
+<script>
+    // demo filter method
+    let colorsStartingWithW = colors1.filter(item => item.startsWith("w") || item.startsWith("g"));
+    console.log("colorsStartingWithW = ", colorsStartingWithW)
+
+</script>
+
+<script>
+    // demo map  method
+    let colors1InUpperCase = colors1.map(item => item.toUpperCase());
+    console.log("colors1InUpperCase = ", colors1InUpperCase);
+
+</script>
+
+<script>
+    // join method
+    console.log(colors1.join());
+    console.log(colors1.join("-"));
+
+</script>
+
+<script>
+    // find method
+    colors1.find(item => item === "green"); // returns 'green' 
+    colors1.find(item => item === "Green"); // returns undefined
+</script>
+
+<script>
+    const students = [
+        { id: 1, name: "Anu", marks: 72, dept: "Math" },
+        { id: 2, name: "Kiran", marks: 45, dept: "Computer Science" },
+        { id: 3, name: "Ravi", marks: 88, dept: "Computer Science" },
+        { id: 4, name: "Meena", marks: 30, dept: "Physics" }
+    ];
+
+    // Task 1: Find student with id = 3
+    console.log(students.find(item => item.id == 3));
+
+    // Task 2: Filter students with marks >= 50
+    console.log(students.filter(item => item.marks >= 50));
+
+    // Task 3: Filter Computer Science students
+    console.log(students.filter(item => item.dept === 'Computer Science'));
+
+
+</script>
