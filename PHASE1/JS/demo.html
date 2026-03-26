@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic of JS</title>
+    </head>
+    <body>
+        <h2>Java script basics</h2>
+        <p>Check <strong>Console</strong> to check the output!</p>
+        <script>
+            let username = "Janhavi";
+            let age = 25;
+            let isStudent = true;
+            let graduationYear;
+
+            const PI = 3.14;
+
+            function calculateArea( radius ){
+                let area = PI * radius * radius;
+                return area;
+            }
+
+            let myRadius = 10;
+            let result = calculateArea( myRadius );
+
+            if(result>100){
+                console.log(username + " " + "the area is very large " + result);
+            } else{
+                console.log(username + " the area is too small " + result);
+            }
+             
+            console.log("Type of age is " + typeof(age));
+            console.log("Graduation year is " + graduationYear);
+        </script>
+    </body>
+</html>

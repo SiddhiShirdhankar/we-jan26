@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Objects Demo</title>
+      
+    </head>
+    <body>
+        <h1>Student database(check console)</h1>
+        <script>
+            let students = [
+                {name:"Janhavi", score:95 , city: "Mumbai"},
+                {name: "Aditya", score:57 , city:"Pune"},
+                {name:"Raj", score:67, city:"Lukcnow"}
+            ];
+
+            function checkResult(studentObj){
+                if(studentObj.score>=50){
+                    return "Passed";
+
+                }else{
+                    return "Failed";
+                }
+            }
+
+            for(let i=0;i<students.length;i++){
+                let currentStudent = students[i];
+            
+            // Use our function to get their status
+            let status = checkResult(currentStudent);
+
+            console.log("Student: " + currentStudent.name);
+            console.log("Location: " + currentStudent.city);
+            console.log("Result: " + status);
+            console.log("----------------------");
+            }
+
+        students.push({ name: "Rahul", score: 72, city: "Bangalore" });
+        console.log("Total students now: " + students.length);
+        </script>
+    </body>
+</html>
